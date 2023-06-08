@@ -8,10 +8,10 @@ let pokemonList = [
   ];
   for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height >=8){
-        document.write(pokemonList[i].name + pokemonList[i].height + "- Wow, that’s big!");
+        document.write(pokemonList[i].name + pokemonList[i].height + "- Wow, that’s big!" + "<br/>");
     }else if (pokemonList[i].height <8 && pokemonList[i].height >=5){
-        document.write(pokemonList[i].name + pokemonList[i].height + "- This is an average size");
+        document.write(pokemonList[i].name + pokemonList[i].height + "- This is an average size" + "<br/>");
     } else {
-        document.write(pokemonList[i].name + pokemonList[i].height + "- This is very small!");
+        document.write(pokemonList[i].name + pokemonList[i].height + "- This is very small!" + "<br/>");
     }
     }
