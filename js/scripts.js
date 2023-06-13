@@ -1,14 +1,5 @@
 let pokemonRepository = (function () {
-let pokemonList = [];
-return {
-    add: function(pokemon) {
-      pokemonList.push(pokemon);
-    },
-    getAll: function() {
-      return pokemonList;
-    }
-  };
-})();
+let pokemonList = [
 console.log(pokemonRepository.getAll()); 
 pokemonRepository.add({ name: 'Charmander' });
 console.log(pokemonRepository.getAll());
@@ -42,7 +33,20 @@ console.log(pokemonRepository.getAll());
     height: "4",
     type: ["electric"]
  };
+ ]; 
+ return {
+   add: function(pokemon) {
+     pokemonList.push(pokemon);
+   },
+   getAll: function() {
+     return pokemonList;
+   },
+ };
+})();
 
-  pokemonList.forEach(function(pokemon) {
-    console.log(pokemon.name + ' is ' + pokemon.height + 'and' + pokemon.type);
-  });
+ pokemonRepository.add ({ name: "Charmander"});
+
+ pokemonRepository.getall().forEach(function (pokemon) {
+   document.write (pokemon.name + "is" pokemon.height + "and" + pokemon.type);
+ });
+ 
